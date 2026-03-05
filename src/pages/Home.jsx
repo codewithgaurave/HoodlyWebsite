@@ -4,24 +4,24 @@ function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative bg-slate-900 text-white py-32 px-4 overflow-hidden">
+      <div className="relative bg-slate-900 text-white py-16 sm:py-24 md:py-32 px-4 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-48 h-48 sm:w-72 sm:h-72 md:w-96 md:h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-48 h-48 sm:w-72 sm:h-72 md:w-96 md:h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
         </div>
         
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <div className="inline-block mb-6">
-            <span className="bg-blue-500/20 text-blue-400 px-6 py-2 rounded-full text-sm font-semibold border border-blue-500/30">Welcome to MyApp</span>
+          <div className="inline-block mb-4 sm:mb-6">
+            <span className="bg-blue-500/20 text-blue-400 px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-semibold border border-blue-500/30">Welcome to HOODLY</span>
           </div>
-          <h1 className="text-6xl md:text-7xl font-bold mb-6">Connect with Skilled Workers Instantly</h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">Find and hire local service providers for all your needs. Fast, reliable, and professional services at your fingertips.</p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 px-2">Connect with Skilled Workers Instantly</h1>
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-6 sm:mb-8 px-4">Find and hire local service providers for all your needs. Fast, reliable, and professional services at your fingertips.</p>
           
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 px-4">
+            <Link to="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-300">
               Get Started
             </Link>
-            <a href="#features" className="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 border border-white/20">
+            <a href="#features" className="bg-white/10 hover:bg-white/20 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-colors duration-300 border border-white/20">
               Learn More
             </a>
           </div>

@@ -2,22 +2,22 @@ function Contact() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-slate-900 text-white py-20 px-4">
+      <div className="bg-slate-900 text-white py-12 sm:py-16 md:py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-6xl font-bold mb-6">Get In Touch With Us</h1>
-          <p className="text-xl mb-8 text-gray-300">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
-          <div className="flex flex-wrap justify-center gap-6">
-            <div className="bg-white/10 backdrop-blur-sm px-8 py-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
-              <p className="text-4xl font-bold text-cyan-400">24/7</p>
-              <p className="text-sm mt-2">Support Available</p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">Get In Touch With Us</h1>
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-gray-300 px-2">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm px-6 sm:px-8 py-4 sm:py-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+              <p className="text-3xl sm:text-4xl font-bold text-cyan-400">24/7</p>
+              <p className="text-xs sm:text-sm mt-2">Support Available</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm px-8 py-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
-              <p className="text-4xl font-bold text-cyan-400">1000+</p>
-              <p className="text-sm mt-2">Happy Customers</p>
+            <div className="bg-white/10 backdrop-blur-sm px-6 sm:px-8 py-4 sm:py-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+              <p className="text-3xl sm:text-4xl font-bold text-cyan-400">1000+</p>
+              <p className="text-xs sm:text-sm mt-2">Happy Customers</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm px-8 py-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
-              <p className="text-4xl font-bold text-cyan-400">Fast</p>
-              <p className="text-sm mt-2">Response Time</p>
+            <div className="bg-white/10 backdrop-blur-sm px-6 sm:px-8 py-4 sm:py-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+              <p className="text-3xl sm:text-4xl font-bold text-cyan-400">Fast</p>
+              <p className="text-xs sm:text-sm mt-2">Response Time</p>
             </div>
           </div>
         </div>

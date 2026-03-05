@@ -58,12 +58,12 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-purple-700">
+        <div className="md:hidden bg-slate-800">
           <ul className="px-4 pt-2 pb-4 space-y-2">
-            <li><Link to="/" onClick={() => setIsOpen(false)} className={`block px-3 py-2 rounded transition-colors ${isActive('/') ? 'bg-yellow-300 text-purple-900 font-semibold' : 'text-white hover:bg-purple-800'}`}>Home</Link></li>
-            <li><Link to="/contact" onClick={() => setIsOpen(false)} className={`block px-3 py-2 rounded transition-colors ${isActive('/contact') ? 'bg-yellow-300 text-purple-900 font-semibold' : 'text-white hover:bg-purple-800'}`}>Contact</Link></li>
-            <li><Link to="/privacy" onClick={() => setIsOpen(false)} className={`block px-3 py-2 rounded transition-colors ${isActive('/privacy') ? 'bg-yellow-300 text-purple-900 font-semibold' : 'text-white hover:bg-purple-800'}`}>Privacy Policy</Link></li>
-            <li><Link to="/terms" onClick={() => setIsOpen(false)} className={`block px-3 py-2 rounded transition-colors ${isActive('/terms') ? 'bg-yellow-300 text-purple-900 font-semibold' : 'text-white hover:bg-purple-800'}`}>Terms & Conditions</Link></li>
+            <li><Link to="/" onClick={() => setIsOpen(false)} className={`block px-3 py-2 rounded transition-colors ${isActive('/') ? 'bg-cyan-500 text-white font-semibold' : 'text-white hover:bg-slate-700'}`}>Home</Link></li>
+            <li><Link to="/contact" onClick={() => setIsOpen(false)} className={`block px-3 py-2 rounded transition-colors ${isActive('/contact') ? 'bg-cyan-500 text-white font-semibold' : 'text-white hover:bg-slate-700'}`}>Contact</Link></li>
+            <li><Link to="/privacy" onClick={() => setIsOpen(false)} className={`block px-3 py-2 rounded transition-colors ${isActive('/privacy') ? 'bg-cyan-500 text-white font-semibold' : 'text-white hover:bg-slate-700'}`}>Privacy Policy</Link></li>
+            <li><Link to="/terms" onClick={() => setIsOpen(false)} className={`block px-3 py-2 rounded transition-colors ${isActive('/terms') ? 'bg-cyan-500 text-white font-semibold' : 'text-white hover:bg-slate-700'}`}>Terms & Conditions</Link></li>
           </ul>
         </div>
       )}
