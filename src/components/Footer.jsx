@@ -7,7 +7,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-cyan-400">MyApp</h3>
+            <h3 className="text-2xl font-bold mb-4 text-cyan-400">HOODLY</h3>
             <p className="text-gray-300 text-sm leading-relaxed">Connecting users with skilled workers for all your service needs. Fast, reliable, and professional.</p>
           </div>
 
@@ -37,7 +37,7 @@ function Footer() {
                 <svg className="w-5 h-5 mr-2 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                support@myapp.com
+                societyhub225@gmail.com
               </li>
               <li className="flex items-start">
                 <svg className="w-5 h-5 mr-2 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
