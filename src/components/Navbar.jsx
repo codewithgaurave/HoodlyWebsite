@@ -11,8 +11,8 @@ function Navbar() {
     <nav className="bg-slate-900 shadow-xl sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="text-white text-2xl font-bold hover:scale-110 transition-transform duration-300">
-            HOODLY
+          <Link to="/" className="hover:scale-110 transition-all duration-300 filter hover:drop-shadow-[0_0_15px_rgba(34,211,238,0.7)]">
+            <img src="/image.png" alt="HOODLY" className="h-12 rounded-lg shadow-lg hover:shadow-cyan-500/50" />
           </Link>
 
           {/* Desktop Menu */}

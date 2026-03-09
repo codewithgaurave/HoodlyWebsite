@@ -7,7 +7,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-cyan-400">HOODLY</h3>
+            <img src="/image.png" alt="HOODLY" className="h-20 mb-4 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300 border-2 border-cyan-400/30" />
             <p className="text-gray-300 text-sm leading-relaxed">Connecting users with skilled workers for all your service needs. Fast, reliable, and professional.</p>
           </div>
 
