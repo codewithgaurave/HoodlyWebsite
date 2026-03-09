@@ -65,7 +65,7 @@ function Navbar() {
       <div className={`fixed top-0 left-0 h-full w-64 bg-slate-800 z-50 transform transition-transform duration-300 ease-in-out md:hidden ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="p-4">
           <div className="flex justify-between items-center mb-6">
-            <img src="/image.png" alt="HOODLY" className="h-10" />
+            <img src="/image.png" alt="HOODLY" className="h-10 ml-3 rounded-lg" />
             <button onClick={() => setIsOpen(false)} className="text-white">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
