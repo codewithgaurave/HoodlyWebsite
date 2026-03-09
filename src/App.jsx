@@ -5,13 +5,14 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import ScrollToTopButton from "./components/ScrollToTop.jsx";
 import "./App.css";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/ScrollToTop.js";
 
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop /> {/* 👈 Yaha close karna zaroori hai */}
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,6 +21,7 @@ function App() {
         <Route path="/terms" element={<Terms />} />
       </Routes>
       <Footer />
+      <ScrollToTopButton />
     </BrowserRouter>
   );
 }
