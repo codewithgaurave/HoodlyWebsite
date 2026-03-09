@@ -56,17 +56,30 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="md:hidden bg-slate-800">
-          <ul className="px-4 pt-2 pb-4 space-y-2">
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden" onClick={() => setIsOpen(false)}></div>
+      )}
+
+      {/* Mobile Menu */}
+      <div className={`fixed top-0 left-0 h-full w-64 bg-slate-800 z-50 transform transition-transform duration-300 ease-in-out md:hidden ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className="p-4">
+          <div className="flex justify-between items-center mb-6">
+            <img src="/image.png" alt="HOODLY" className="h-10" />
+            <button onClick={() => setIsOpen(false)} className="text-white">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <ul className="space-y-2">
             <li><Link to="/" onClick={() => setIsOpen(false)} className={`block px-3 py-2 rounded transition-colors ${isActive('/') ? 'bg-cyan-500 text-white font-semibold' : 'text-white hover:bg-slate-700'}`}>Home</Link></li>
             <li><Link to="/contact" onClick={() => setIsOpen(false)} className={`block px-3 py-2 rounded transition-colors ${isActive('/contact') ? 'bg-cyan-500 text-white font-semibold' : 'text-white hover:bg-slate-700'}`}>Contact</Link></li>
             <li><Link to="/privacy" onClick={() => setIsOpen(false)} className={`block px-3 py-2 rounded transition-colors ${isActive('/privacy') ? 'bg-cyan-500 text-white font-semibold' : 'text-white hover:bg-slate-700'}`}>Privacy Policy</Link></li>
             <li><Link to="/terms" onClick={() => setIsOpen(false)} className={`block px-3 py-2 rounded transition-colors ${isActive('/terms') ? 'bg-cyan-500 text-white font-semibold' : 'text-white hover:bg-slate-700'}`}>Terms & Conditions</Link></li>
           </ul>
         </div>
-      )}
+      </div>
     </nav>
   );
 }
