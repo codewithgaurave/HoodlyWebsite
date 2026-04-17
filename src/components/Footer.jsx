@@ -26,6 +26,7 @@ function Footer() {
             <ul className="space-y-3">
               <li><Link to="/privacy" className="text-gray-300 hover:text-cyan-400 transition-colors inline-flex items-center"><span className="mr-2">→</span> Privacy Policy</Link></li>
               <li><Link to="/terms" className="text-gray-300 hover:text-cyan-400 transition-colors inline-flex items-center"><span className="mr-2">→</span> Terms & Conditions</Link></li>
+              <li><Link to="/refund" className="text-gray-300 hover:text-cyan-400 transition-colors inline-flex items-center"><span className="mr-2">→</span> Refund Policy</Link></li>
             </ul>
           </div>
 
